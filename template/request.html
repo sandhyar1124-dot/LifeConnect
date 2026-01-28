@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LifeConnect</title>
+<link rel="stylesheet" href="../style/request.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">❤️ LifeConnect</b></div>
+  <button class="donate-btn">Become a Donor</button>
+</header>
+
+<!-- ALERT -->
+<section class="alert">
+  <h3>❤️ Lives Need Your Help</h3>
+  <p>
+    View and respond to blood donation requests.
+    Your timely response can save lives.
+  </p>
+</section>
+
+<!-- FILTER -->
+<section class="filter">
+  <h4>Filter Requests</h4>
+
+  <div class="filter-row">
+    <input type="text" placeholder="Search by hospital name...">
+
+    <select>
+      <option>Blood Type</option>
+      <option>A+</option><option>A-</option>
+      <option>B+</option><option>B-</option>
+      <option>AB+</option><option>AB-</option>
+      <option>O+</option><option>O-</option>
+    </select>
+
+    <div class="blood-types">
+      <span>A+</span><span>A-</span><span>B+</span><span>B-</span>
+      <span>AB+</span><span>AB-</span><span>O+</span><span>O-</span>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST LIST -->
+<section class="requests">
+
+  <!-- CARD -->
+  <div class="card">
+    <div class="blood">O+</div>
+
+    <div class="details">
+      <h4>City General Hospital</h4>
+      <p>📍 Emergency Ward</p>
+      <p>🕒 Posted 2 hours ago</p>
+    </div>
+
+    <div class="info">
+      <span class="urgent">URGENT</span>
+      <p>Emergency Surgery</p>
+      <p>2 Units Required</p>
+    </div>
+
+    <div class="actions">
+      <button class="call">📞 Call</button>
+      <button class="respond">Respond to Request</button>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="card">
+    <div class="blood a">A-</div>
+
+    <div class="details">
+      <h4>St. Mary Medical Center</h4>
+      <p>📍 ICU</p>
+      <p>🕒 Posted 4 hours ago</p>
+    </div>
+
+    <div class="info">
+      <span class="urgent">URGENT</span>
+      <p>Accident Care</p>
+      <p>3 Units Required</p>
+    </div>
+
+    <div class="actions">
+      <button class="call">📞 Call</button>
+      <button class="respond">Respond to Request</button>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="card">
+    <div class="blood b">B+</div>
+
+    <div class="details">
+      <h4>Apollo Hospital</h4>
+      <p>📍 Operation Theatre</p>
+      <p>🕒 Posted 6 hours ago</p>
+    </div>
+
+    <div class="info">
+      <span class="urgent">URGENT</span>
+      <p>Scheduled Surgery</p>
+      <p>1 Unit Required</p>
+    </div>
+
+    <div class="actions">
+      <button class="call">📞 Call</button>
+      <button class="respond">Respond to Request</button>
+    </div>
+  </div>
+
+</section>
+
+<script src="../logical/request.js"></script>
+</body>
+</html>

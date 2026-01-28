@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LifeConnect – Achievements</title>
+
+<link rel="stylesheet" href="../style/achievements.css">
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo"> ❤️ LifeConnect</div>
+    <div class="menu">
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      <a href="{{ url_for('my_requests') }}">Blood Requests</a>
+      <a href="{{ url_for('history') }}">Donation History</a>
+      <a href="#" class="active">Achievements</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+    </div>
+
+    <div class="next">
+      <strong>Next Eligible</strong><br>
+      You can donate again in <b>45 days</b>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <input class="search" placeholder="Search for blood banks, hospitals...">
+      <div class="user">
+        <span>Sandhiya R (Donor)</span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <h2>Achievements</h2>
+
+      <!-- OVERVIEW -->
+      <div class="overview">
+        <div style="display:flex;justify-content:space-between">
+          <div>Unlocked<br><b>5</b></div>
+          <div>Total<br><b>9</b></div>
+        </div>
+        <div class="bar"><span></span></div>
+        <small>56% Complete</small>
+      </div>
+
+      <!-- UNLOCKED -->
+      <div class="section-title">Unlocked (5)</div>
+      <div class="grid">
+        <div class="card">
+          <div class="icon red">🩸</div>
+          <div>
+            <b>First Drop</b>
+            <div class="small">Complete your first donation</div>
+            <div class="unlocked">Unlocked on March 2, 2024</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon blue">🏅</div>
+          <div>
+            <b>5 Donations Milestone</b>
+            <div class="small">Donate blood 5 times</div>
+            <div class="unlocked">Unlocked on June 10, 2024</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon gold">🏆</div>
+          <div>
+            <b>10 Donations Champion</b>
+            <div class="small">Reach 10 successful donations</div>
+            <div class="unlocked">Unlocked on Dec 15, 2024</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon purple">⭐</div>
+          <div>
+            <b>Consistent Donor</b>
+            <div class="small">Donate 4 times in a year</div>
+            <div class="unlocked">Unlocked on Dec 1, 2024</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon red">❤️</div>
+          <div>
+            <b>Life Saver</b>
+            <div class="small">Save 30+ lives</div>
+            <div class="unlocked">Unlocked on Dec 18, 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IN PROGRESS -->
+      <div class="section-title">In Progress (4)</div>
+      <div class="grid">
+        <div class="card">
+          <div class="icon green">👥</div>
+          <div style="flex:1">
+            <b>Community Hero</b>
+            <div class="small">Refer 3 friends</div>
+            <div class="progress"><span class="p-green"></span></div>
+            <small>60%</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon gold">⚡</div>
+          <div style="flex:1">
+            <b>Quick Responder</b>
+            <div class="small">Respond to urgent requests</div>
+            <div class="progress"><span class="p-orange"></span></div>
+            <small>80%</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon blue">💎</div>
+          <div style="flex:1">
+            <b>25 Donations Veteran</b>
+            <div class="small">Complete 25 donations</div>
+            <div class="progress"><span class="p-blue"></span></div>
+            <small>45%</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon purple">👑</div>
+          <div style="flex:1">
+            <b>Platinum Donor</b>
+            <div class="small">Donate blood 50 times</div>
+            <div class="progress"><span class="p-purple"></span></div>
+            <small>25%</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOTIVATION -->
+      <div class="motivation">
+        ⭐ <b>Keep Going, Hero!</b><br><br>
+        Every achievement represents lives you've touched and communities you've strengthened.
+        Keep pushing forward and unlock more milestones!
+        <br>
+        <button onclick="schedule()">Schedule Next Donation</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="../logical/achievements.js"></script>
+</body>
+</html>

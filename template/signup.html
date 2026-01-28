@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeConnect – Sign In</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="left">
+        <h2>🩸 LifeConnect</h2>
+        <h1>Donate Blood,<br>Save Lives</h1>
+        <p>Join our community of heroes making a difference.</p>
+
+        <div class="total-box">
+            <strong>Total Donations</strong><br>
+            50,000+ Lives Saved
+        </div>
+    </div>
+
+    <div class="right">
+        <h2>Welcome Back</h2>
+        <p class="desc">Sign in to continue your journey of saving lives</p>
+
+        <form action="/signin" method="POST">
+            <div class="role-box">
+                <input type="hidden" name="role" id="selectedRole" value="donor">
+                <button type="button" class="role active" id="donorBtn" onclick="selectRole('donor')">Blood Donor</button>
+                <button type="button" class="role" id="needBtn" onclick="selectRole('need')">Need Blood</button>
+            </div>
+
+            <input name="username" type="text" placeholder="Full Name" required>
+            <input name="email" type="email" placeholder="Email Address" required>
+            <input name="password" type="password" placeholder="Password" required>
+
+            <div class="row">
+                <label><input type="checkbox"> Remember me</label>
+                <span style="color:red;cursor:pointer">Forgot Password?</span>
+            </div>
+
+            <button type="submit">Sign In</button>
+        </form>
+
+        <p style="text-align:center;margin-top:20px">
+            Don't have an account?
+            <span style="color:red;cursor:pointer" onclick="goSignup()">Sign up now</span>
+        </p>
+    </div>
+
+</div>
+
+<script>
+    function selectRole(role) {
+        document.getElementById('selectedRole').value = role;
+        
+        const donorBtn = document.getElementById('donorBtn');
+        const needBtn = document.getElementById('needBtn');
+        
+        if (role === 'donor') {
+            donorBtn.classList.add('active');
+            needBtn.classList.remove('active');
+        } else {
+            donorBtn.classList.remove('active');
+            needBtn.classList.add('active');
+        }
+    }
+
+    function goSignup(){
+        // Flask route-ku redirect pannum
+        window.location.href = "/signup";
+    }
+</script>
+
+</body>
+</html>

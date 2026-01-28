@@ -1,0 +1,127 @@
+
+* {
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #fff;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#e11d48;
+  margin-bottom:30px;
+}
+
+.donate-btn {
+  background: #e11d48;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+/* ALERT */
+.alert {
+  background: #e11d48;
+  color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* FILTER */
+.filter {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter input, select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.blood-types span {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* REQUESTS */
+.requests {
+  margin: 20px;
+}
+
+.card {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr auto;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.blood {
+  background: #e11d48;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.blood.a { background: #e11d48; }
+.blood.b { background: #e11d48; }
+
+.details h4 {
+  margin-bottom: 5px;
+}
+
+.info .urgent {
+  background: #ffe0e0;
+  color: #e11d48;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.actions button {
+  display: block;
+  margin-bottom: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+.call {
+  background: #f1f1f1;
+}
+
+.respond {
+  background: #e11d48;
+  color: #fff;
+}

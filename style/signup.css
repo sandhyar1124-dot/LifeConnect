@@ -1,0 +1,71 @@
+
+
+*{box-sizing:border-box;font-family:"Segoe UI",sans-serif}
+body{background:#f3f3f3;padding:30px}
+
+.container{
+max-width:1100px;margin:auto;display:flex;
+background:#fff;border-radius:15px;overflow:hidden}
+
+.left{
+width:45%;padding:40px;color:#fff;
+background:linear-gradient(135deg,#e11d48,#fb7185)}
+
+.left ul{list-style:none;padding:0}
+.left li{margin-bottom:10px}
+
+.progress{display:flex;gap:10px;margin-top:40px}
+.progress span{height:6px;width:60px;background:#fff4;border-radius:10px}
+.progress span.active{background:#fff}
+
+.right{width:55%;padding:40px}
+.step{display:none}
+.step.active{display:block}
+.desc{color:#666}
+
+input,select,textarea{
+width:100%;padding:12px;margin-bottom:15px;
+border-radius:8px;border:1px solid #ddd}
+
+.row{display:flex;gap:15px}
+
+button{
+width:100%;padding:14px;border:none;border-radius:10px;
+background:#e11d48;color:#fff;font-size:16px;cursor:pointer}
+
+button.outline{
+background:#fff;color:#333;border:1px solid #ccc}
+
+.btn-row{display:flex;gap:15px}
+
+.role-box{display:flex;gap:15px;margin-bottom:20px}
+.role{
+flex:1;padding:15px;text-align:center;
+border:1px solid #ddd;border-radius:10px;cursor:pointer}
+
+.role.active{
+border:2px solid #e11d48;background:#ffe6eb}
+
+.section-title{
+background:#ffe6eb;padding:10px;
+border:1px solid #ffb3c2;
+color:#e11d48;font-weight:bold;
+border-radius:8px;margin:20px 0}
+
+.error{color:red;font-weight:bold}
+#resultMsg{font-weight:bold;margin:10px 0}
+
+.password-box{
+position:relative
+}
+.password-box span{
+position:absolute;
+right:15px;
+top:12px;
+cursor:pointer
+}
+.success{
+color:green;
+font-weight:bold;
+margin-top:10px
+}

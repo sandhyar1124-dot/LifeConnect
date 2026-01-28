@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LifeConnect – Donation History</title>
+<link rel="stylesheet" href="../style/histroy.css">
+
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo">❤️ LifeConnect</div>
+
+    <div class="menu">
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      <a href="{{ url_for('my_requests') }}">Blood Requests</a>
+      <a href="#" class="active">Donation History</a>
+      <a href="{{ url_for('achievements') }}">Achievements</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+    </div>
+
+    <div class="next">
+      <strong>Next Eligible</strong><br>
+      You can donate again in <b>45 days</b>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <input class="search" placeholder="Search for blood banks, hospitals...">
+      <div class="user">
+        <span>Sandhiya R (Donor)</span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <h2>Donation History</h2>
+      <div class="sub">Your complete journey as a life-saving hero</div>
+
+      <!-- STATS -->
+      <div class="stats">
+        <div class="stat">
+          Total Donations
+          <h3>5</h3>
+        </div>
+        <div class="stat">
+          Lives Saved
+          <h3>15</h3>
+        </div>
+        <div class="stat">
+          Total Units (ml)
+          <h3>2200</h3>
+        </div>
+      </div>
+
+      <!-- FILTER -->
+      <div class="filter">
+        Filter by Type
+        <div style="margin-top:10px">
+          <button class="active" onclick="setFilter(this)">All Types</button>
+          <button onclick="setFilter(this)">Whole Blood</button>
+          <button onclick="setFilter(this)">Platelet</button>
+          <button onclick="setFilter(this)">Plasma</button>
+        </div>
+      </div>
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <div class="leftc">
+          <div class="icon">WB</div>
+          <div>
+            <b>City General Hospital</b><br>
+            <span class="small">Dec 15, 2024 · 123 Main Street</span><br>
+            <span class="small">Units Donated: 450 ml</span><br>
+            <button class="download" onclick="download()">Download Certificate</button>
+          </div>
+        </div>
+        <div>
+          <div class="badge">Completed</div>
+          <div class="small">Lives Saved: Up to 3</div>
+        </div>
+      </div>
+
+      <div class="highlight">
+        Latest Donation! You saved 3 more lives. Thank you, hero!
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <div class="leftc">
+          <div class="icon">PL</div>
+          <div>
+            <b>St. Mary Medical Center</b><br>
+            <span class="small">Sep 20, 2024 · West Avenue</span><br>
+            <span class="small">Units Donated: 250 ml</span><br>
+            <button class="download" onclick="download()">Download Certificate</button>
+          </div>
+        </div>
+        <div>
+          <div class="badge">Completed</div>
+          <div class="small">Lives Saved: Up to 2</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="../logical/histroy.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LifeConnect Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../style/dashboard1.css">
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  
+    <input class="search" placeholder="Search for blood banks, hospitals...">
+    
+   
+  </div>
+ 
+</div>
+
+<div class="container">
+<!-- ...existing code... -->
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">❤️ LifeConnect</div>
+    <div class="menu">
+      <a class="active">Dashboard</a>
+      <a href="{{ url_for('my_requests') }}">Blood Requests</a>
+      <a href="{{ url_for('history') }}">Donation History</a>
+      <a href="{{ url_for('achievements') }}">Achievements</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+    </div>
+
+    <div class="next-eligible">
+      <strong>Next Eligible</strong><br>
+      You can donate again in <b>45 days</b>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Welcome -->
+    <div class="welcome">
+      <div>
+        <h2>Welcome back, SANDHIYA R! 👋</h2>
+        <p>Thank you for being a life-saving hero</p>
+      </div>
+      <button>Schedule Donation</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="card">
+        <p>Total Donations</p>
+        <h2>12</h2>
+      </div>
+      <div class="card">
+        <p>Lives Saved</p>
+        <h2>36</h2>
+      </div>
+      <div class="card">
+        <p>Badges Earned</p>
+        <h2>8</h2>
+      </div>
+      <div class="card">
+        <p>Active Days</p>
+        <h2>245</h2>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+      <!-- Requests -->
+      <div class="box">
+        <h3>Urgent Blood Requests</h3>
+
+        <div class="request">
+          <div>
+            <b>O+</b> City General Hospital<br>
+            <small>2.5 km away</small>
+          </div>
+          <button class="respond">Respond</button>
+        </div>
+
+        <div class="request">
+          <div>
+            <b>A-</b> St. Mary Medical Center<br>
+            <small>5.1 km away</small>
+          </div>
+          <button class="respond">Respond</button>
+        </div>
+
+        <div class="request">
+          <div>
+            <b>B+</b> Community Health Clinic<br>
+            <small>8.3 km away</small>
+          </div>
+          <button class="respond">Respond</button>
+        </div>
+      </div>
+
+      <!-- Appointments -->
+      <div class="box">
+        <h3>Upcoming Appointments</h3>
+
+        <div class="appointment">
+          <b>Jan 15, 2025</b><br>
+          10:00 AM<br>
+          Blood Bank Center
+        </div>
+
+        <div class="appointment">
+          <b>Feb 10, 2025</b><br>
+          2:30 PM<br>
+          Mobile Drive – City Park
+        </div>
+
+        <button class="respond" style="width:100%">Schedule New Appointment</button>
+      </div>
+
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="box activity">
+      <h3>Recent Activity</h3>
+
+      <div class="activity-item">
+        Blood Donation Completed – City General Hospital
+      </div>
+      <div class="activity-item">
+        Achievement Unlocked: 10 Donations
+      </div>
+      <div class="activity-item">
+        Appointment Scheduled – Jan 15, 2025
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="../logical/dashboard1.js"></script>
+
+</body>
+</html>

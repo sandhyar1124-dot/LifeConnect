@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LifeConnect | Blood Requests</title>
+<link rel="stylesheet" href="../style/my-request.css">
+
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo"> ❤️ LifeConnect</div>
+
+    <nav>
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      <a class="active">Blood Requests</a>
+      <a href="{{ url_for('history') }}">Donation History</a>
+      <a href="{{ url_for('achievements') }}">Achievements</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+    </nav>
+
+    <div class="eligible-box">
+      <h4>Next Eligible</h4>
+      <p>You can donate again in <b>45 days</b></p>
+      <div class="progress"></div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <input type="text" placeholder="Search for blood banks, hospitals...">
+      <div class="profile">
+        <span>SANDHYA R</span>
+        <button>Logout</button>
+      </div>
+    </header>
+
+    <!-- TITLE -->
+    <section class="title">
+      <h2>Blood Requests</h2>
+      <p>Help save lives by responding to urgent blood requests</p>
+    </section>
+
+    <!-- SEARCH -->
+    <div class="search">
+      <input type="text" placeholder="Search by patient name or hospital">
+      <select>
+        <option>All Blood Types</option>
+      </select>
+    </div>
+
+    <!-- ALERT -->
+    <div class="alert">
+      ⚠️ Urgent requests need immediate attention
+    </div>
+
+    <!-- REQUEST -->
+    <div class="request urgent">
+      <div class="blood">O+</div>
+      <div class="details">
+        <h4>Patient: Rajesh Kumar</h4>
+        <span>City General Hospital</span>
+        <small>📍 5.2 km • ⏱ 2 hours ago</small>
+      </div>
+      <span class="tag">URGENT</span>
+      <div class="actions">
+        <button class="respond">Respond</button>
+        <button class="outline">Details</button>
+      </div>
+    </div>
+
+    <div class="request urgent">
+      <div class="blood">A-</div>
+      <div class="details">
+        <h4>Patient: Priya Sharma</h4>
+        <span>St. Mary Medical Center</span>
+        <small>📍 3.1 km • ⏱ 4 hours ago</small>
+      </div>
+      <span class="tag">URGENT</span>
+      <div class="actions">
+        <button class="respond">Respond</button>
+        <button class="outline">Details</button>
+      </div>
+    </div>
+
+    <div class="request">
+      <div class="blood">B+</div>
+      <div class="details">
+        <h4>Patient: Arun Patel</h4>
+        <span>Community Health Clinic</span>
+        <small>📍 4.8 km • ⏱ 6 hours ago</small>
+      </div>
+      <div class="actions">
+        <button class="respond">Respond</button>
+        <button class="outline">Details</button>
+      </div>
+    </div>
+
+    <div class="request urgent">
+      <div class="blood">AB+</div>
+      <div class="details">
+        <h4>Patient: Lakshmi Reddy</h4>
+        <span>Metro Hospital</span>
+        <small>📍 2.1 km • ⏱ 8 hours ago</small>
+      </div>
+      <span class="tag">URGENT</span>
+      <div class="actions">
+        <button class="respond">Respond</button>
+        <button class="outline">Details</button>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../logical/my-request.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+:root {
+  --primary: #e11d48;
+  --primary-light: #ffe6ea;
+  --bg: #f5f6fa;
+  --text-dark: #222;
+  --text-muted: #777;
+  --white: #fff;
+  --radius: 12px;
+  --font: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  font-family: var(--font);
+}
+
+button {
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.role.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.role {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: #fff;
+}
